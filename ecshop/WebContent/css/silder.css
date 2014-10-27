@@ -1,0 +1,16 @@
+
+/* css 重置 */
+*{margin:0; padding:0; list-style:none; }
+img{ border:0;  }
+a{ text-decoration:none; color:#333;  }
+
+/* 本例子css */
+.slideBox{ width:300px; height:230px; overflow:hidden; position:relative; border:1px solid #ddd; margin-left: auto;
+margin-right: auto; }
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:300px; height:230px; display:block;  }
