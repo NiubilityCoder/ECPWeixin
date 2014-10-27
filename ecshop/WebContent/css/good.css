@@ -1,0 +1,60 @@
+.toright{position: relative; top: 2px; float: right;}
+
+/*********************************************************************************** BLOG */
+article { margin:3px 0px; border-top:1px solid #eee; background:#fff; display: inline-block; width:100%; }
+article:first-child { border-top:0px; }
+article h2 { margin: 7px 4px 4px; font-size: 30px; }
+article h3 a, article h2 a { text-decoration:none !important; font-weight:bold; }
+article h3 a:hover, article h2 a:hover { text-decoration:none; }
+article p { margin-bottom: 3px; font-size: 15px;}
+article img { height:200px; width:100%;max-width:400px; max-height:200px; }
+article p.posts-summary { height: 69px; overflow:hidden; padding-right: 5px; }
+article div.a-meta { font-size: 13px; text-align: right; background-color: #f4f3f2; margin-top: 4px; padding-right: 5px; }
+article div.a-meta.a-meta-left { text-align: left; margin-left:0px; padding: 5px; }
+article div.a-meta > a { text-decoration:none; }
+article div.a-meta > span { float:left; }
+article .article-img-pane { width:120px; height:120px; text-align:center; position:relative; float:left; margin-right:10px; overflow:hidden; }
+article .article-img-pane img { height:100%; max-width: inherit; }
+
+.p-blog article h2 { color: #EA2424; }
+.p-blog article a { text-decoration:none; }
+.p-blog article a p { color: #333; }
+
+.article-comments {}
+.article-comments > ul { padding:5px; }
+.article-comments > ul  li { list-style:none; border-bottom: 1px solid #DDD; padding-bottom: 10px; margin-bottom: 10px; }
+.article-comments > ul  li img { max-width:60px; padding:2px; background-color:#fff; border-radius:50%; float:left; border: 1px solid #DDD; margin: 10px 10px 10px 0px; }
+.article-comments > ul  li p.c-a-name { font-size: 14px; margin:0px; }
+.article-comments > ul  li p { margin:0px; }
+.article-comments > ul  li .comment-date { font-size:12px;  }
+.article-comments > ul  li p.desc { color:#999; }
+.article-comments > ul > li > ul { padding-left:5px; }
+.article-comments > ul > li > ul > li { background-color: #EEEFF1; padding: 5px 10px; margin-top: 10px; margin-bottom:0px; }
+
+/*********************************************************************************** PRODUCTS */
+.prod-pricePane { height: 69px; line-height: 69px; text-align: center; }
+.prod-pricePane .last-price { text-decoration: line-through; font-size: 20px; color: #AAA; }
+.prod-pricePane .current-price { font-size: 30px; color: #EA2424; margin: 0px 5px; }
+.prod-pricePane .currency { font-size: 20px; color: #AAA; }
+
+.products-ratings { position: relative; top: 2px; }
+.products-ratings i { color: #EAB236; font-size: 15px; }
+.prod-single-content { background-color:#fff; padding:15px; }
+.prod-single-content-h { width: 100%; position: relative; top: 2px; right:5px}
+.prod-single-content-h hr {width: 100%;}
+.prod-single-content-h .prod-pricePane { width: 50%; float: right; height: 50px; line-height: 50px; }
+.prod-single-content-h .products-ratings { float: right; height: 50px; line-height: 50px; }
+.prod-single-content-span {font-weight:bold }
+.prod-single-content-Stock{ width: 50%; position: relative; top: 2px; left:5px;float: left;}
+.prod-single-content-buycount{position: relative; top: 2px; float: right;}
+
+
+.product-single-meta { padding:20px 0px; margin-bottom:20px; display:inline-block; width:100%; }
+.product-single-meta .p-single-meta-likes{ float:left; text-align:left; font-size: 18px; }
+.product-single-meta .p-single-meta-likes h4 { color:#575757; text-transform: uppercase; font-size: 13px; }
+.product-single-meta .p-single-meta-likes i { font-size: 25px; color: #AAA; }
+.product-single-meta .p-single-meta-share { float:right; text-align:right; }
+.product-single-meta .p-single-meta-share h4 { color:#575757; text-transform: uppercase; font-size: 13px; }
+.product-single-meta .p-single-meta-share a { font-size: 15px; color: #EAEAEA; width: 30px; height: 30px;
+line-height: 30px; text-align: center; background-color: #AAA; display: inline-block; border-radius: 50%; }
+

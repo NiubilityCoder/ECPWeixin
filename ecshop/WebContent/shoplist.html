@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>iMarket&trade; v2.0</title>
+		<meta charset="UTF-8">	
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css"> 
+		<link rel="stylesheet" href="css/nav.css">
+    	<link rel="stylesheet" href="css/silder.css">
+        <link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.8.3.min.js"></script>
+    	<script src="js/jquery.mobile-1.4.4.min.js"></script>
+    	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	</head>
+	<body>
+	<div data-role="page" id="shoplist">
+		<div data-role="header" data-position="fixed">
+		    <a href="index.html" data-role="button" data-icon="home" data-ajax="false">首页</a>
+		    <h1>iMarket&trade; v2.0</h1>
+	  	</div>
+
+	    <div data-role="content">
+	     <div id="slideBox" class="slideBox">
+            <div class="hd">
+              <ul><li>1</li><li>2</li><li>3</li></ul>
+            </div>
+            <div class="bd">
+              <ul>
+                <li><a href="gooddetails.html" data-ajax="false"><img src="images/photo11.jpg" /></a></li>
+                <li><a href="gooddetails.html" data-ajax="false"><img src="images/photo12.jpg" /></a></li>
+                <li><a href="gooddetails.html" data-ajax="false"><img src="images/photo13.jpg" /></a></li>
+              </ul>
+            </div>
+     	 </div>
+
+		
+	     <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="搜索店名">
+			  <li data-role="list-divider"><img src="images/location_blue.png"/>和平区</li>
+			  <li><a href="goodlist.html" data-transition="slide" data-ajax="false">和平区一店</a></li>
+			  <li><a href="#"  data-ajax="false">福星公寓</a></li>
+			  <li><a href="#"  data-ajax="false">全胜里</a></li>
+			  <li><a href="#"  data-ajax="false">犀地朗文名邸</a></li>
+			  <li><a href="#"  data-ajax="false">天汇雅苑</a></li>
+			  <li><a href="#"  data-ajax="false">德旺里</a></li>
+			  <li><a href="#"  data-ajax="false">泰安道五大院</a></li>
+		 </ul>
+	  </div>
+	  <div data-role="footer" class="nav-glyphish-example" data-position="fixed">
+	    <div data-role="navbar" class="nav-glyphish-example">
+	      <ul>
+	        <li><a href="myaccount.html" data-icon="custom" id="order" data-ajax="false">我的账号</a></li>
+	        <li><a href="#" data-icon="custom" id="shop" data-ajax="false" data-ajax="false" class="ui-btn-active" >最近门店</a></li>
+	        <li><a href="mycart.html" data-icon="custom" id="char" data-ajax="false">购物车</a></li>
+			<li><a href="myorder.html" data-icon="custom" id="user" data-ajax="false">我的订单</a></li>
+	      </ul>
+	    </div>
+	  </div>
+
+	<script id="jsID" type="text/javascript">
+        $('.slideBox').slide( { mainCell:".bd ul",autoPlay:true});
+    </script>
+
+	</div> 
+  </body>
+</html>

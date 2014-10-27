@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>iMarket&trade; v2.0</title>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css"> 
+        <link rel="stylesheet" href="css/nav.css">
+        <!--For Validation-->
+        <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery.mobile-1.4.4.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/mycart.js"></script>
+    
+        <style>
+            .ui-field-contain>label{width:50px;}
+            .ui-field-contain>label~[class*=ui-]{width:60px;}
+            .ui-checkbox input, .ui-radio input{width:30px;height:30px;}
+        </style>
+	</head>
+    <body>
+   	<form action=""  id="mycart" >
+    	<div data-role="page" id="mycart">
+            <div data-role="header" data-position="fixed">
+              <a href="index.html" data-role="button" data-icon="home" data-ajax="false">首页</a>
+              <h1>iMarket&trade; v2.0</h1>
+            </div>
+        	<div data-role="content" data-inset="true">
+			 <!--生成整个table以便现实每一条订单-->  
+         	<table width="100%" class="goodtr" >
+              <tr >
+                <td width="12%" rowspan="4" ><input type="checkbox"  class="checked" name="check_item" id="checkbox1" checked=checked ></td>
+                <td width="16%" rowspan="4"> <img  class="goodimg" src="images/photo11.jpg"></td>
+                <td colspan="3"><p class="goodinfo" name="goodName">新奇士脐橙，8斤，甜中带微!以下是省略的文字</p></td>
+              </tr>
+              <tr class="goodtr">
+                <td colspan="3">
+                    <lable class="fontYahei">现价：</lable><lable class="red" name="price">100000.0</lable>
+                </td>
+              </tr>
+              <tr class="goodtr">
+                <td colspan="3"><lable class="fontYahei">库存：</lable><lable class="red">100</lable></td>
+                </tr>
+              <tr class="goodtr">
+                <td width="46%"> <lable class="fontYahei">数量:</lable></td>
+                <td colspan="2"><input  data-rule-required="true"  data-msg-required="请填写数量" data-rule-range="[1,100]" data-msg-range="请输入1~100" 		 			type="number"   pattern="[0-9]*" name="count1" value="30" id="Number1"  /></td>
+              </tr>
+              <tr class="goodtr"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <!--<td width="5%"><a class="ui-shadow ui-btn ui-corner-all ui-icon-star ui-btn-icon-notext ui-btn-inline toright" data-ajax="false" name="favrite">Favrite</a></td>-->
+              
+                <td width="21%"><a class="ui-shadow ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline toright" data-ajax="false" name="delete">Delete</a></td>
+              </tr>
+			</table>
+            
+            <table width="100%" class="goodtr" >
+              <tr >
+                <td width="12%" rowspan="4" ><input type="checkbox"  class="checked" name="check_item" id="checkbox1" checked=checked ></td>
+                <td width="16%" rowspan="4"> <img  class="goodimg" src="images/photo11.jpg"></td>
+                <td colspan="3"><p class="goodinfo" name="goodName">新奇士脐橙，8斤，甜中带微!以下是省略的文字</p></td>
+              </tr>
+              <tr class="goodtr">
+                <td colspan="3">
+                    <lable class="fontYahei">现价：</lable><lable class="red" name="price">19.0</lable>
+                </td>
+              </tr>
+              <tr class="goodtr">
+                <td colspan="3"><lable class="fontYahei">库存：</lable><lable class="red">200000</lable></td>
+                </tr>
+              <tr class="goodtr">
+                <td width="46%"> <lable class="fontYahei">数量:</lable></td>
+                <td colspan="2"><input  data-rule-required="true"  data-msg-required="请填写数量" data-rule-range="[1,200000]" data-msg-range="请输入1~200000" 		 			type="number"   pattern="[0-9]*" name="count2" value="30" id="Number2"  /></td>
+              </tr>
+              <tr class="goodtr"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td width="5%"><!--<a class="ui-shadow ui-btn ui-corner-all ui-icon-star ui-btn-icon-notext ui-btn-inline toright" data-ajax="false" name="favrite">Favrite</a>--></td>
+                <td width="21%"><a class="ui-shadow ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline toright" data-ajax="false" name="delete">Delete</a></td>
+              </tr>
+			</table>
+            
+		</div><!--Content-->
+
+        <div id="confirm" class="ui-content" data-role="popup" data-theme="a" data-overlay-theme="a" data-dismissible="false">
+        	<p id="question">您确定删除?</p>
+        	<div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-d" data-rel="back">是</a>
+                </div>
+                <div class="ui-block-b">
+                    <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">否</a>
+                </div>
+        	</div><!--<div class="ui-grid-a">-->
+    	</div><!--id="confirm"-->
+
+        <div data-role="popup" id="popupDialog" data-overlay-theme="a" data-dismissible="false"  >
+    				<div role="main" class="ui-content">
+        				<h3 class="ui-title" > </h3>
+    					<p>亲！至少买一件吧！</p>
+        				<a href="#" class="ui-btn ui-corner-all ui-mini ui-btn-d" data-transition="flow" data-rel="back" data-ajax="false">好的</a>
+    				</div>
+    	</div><!--id="popupDialog"-->
+
+    
+    <div data-role="footer" class="" data-position="fixed">
+      <div data-role="navbar" class="nav-glyphish-example">
+          <div class="totalCheck" id="totalCheck">
+                    <table width="100%" border="0">
+                        <tr>
+                            <td width="10%">
+                                <div class="ui-field-contain">
+                                <label class="fontYahei"> 全选</label>
+                                <input type="checkbox" class="checked" id="box_all" checked=checked>
+                                </div>
+                            </td>
+                            <td width="33%"> <p class="fontYahei toleft">总计：<span class="ff6"><lable class="red" id="totalPrice">0.0</lable></span></p>
+                                <p class="fontYahei toleft">运费：<span class="ff6"><lable class="red" id="yunfei">0.0</lable></span></p></td>
+                            <td width="25%"><button  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-d toright" id="check" height="20px">结算</button>				 						</td>
+                        </tr>
+                    </table>
+            </div> <!--id="totalCheck"-->
+            <ul>
+              <li><a href="myaccount.html" data-icon="custom" id="order" data-ajax="false">我的账号</a></li>
+              <li><a href="shoplist.html" data-icon="custom" id="shop" data-ajax="false">最近门店</a></li>
+              <li><a href="#" data-icon="custom" id="char" data-ajax="false"  class="ui-btn-active" >购物车</a></li>
+              <li><a href="myorder.html" data-icon="custom" id="user" data-ajax="false">我的订单</a></li>
+            </ul>
+      	</div><!--<div data-role="navbar" class="nav-glyphish-example">-->
+    </div><!--<div data-role="footer" class="" data-position="fixed">-->
+  </div><!--Page-->
+</form>
+
+  
+
+  </body>
+</html>

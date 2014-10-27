@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iMarket&trade; v2.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">	
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/good.css">
+        <!--For Validation-->
+        <link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.mobile-1.4.4.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/gooddetails.js"></script>
+        
+	</head>
+<body>
+<form action=""  id="gooddetails">
+<div data-role="page" id="gooddetails">
+	<div data-role="header" data-position="fixed">
+    	<a href="index.html" data-role="button" data-icon="home" data-ajax="false">首页</a>
+    	<h1>iMarket&trade; v2.0</h1>
+  	</div>
+
+  	<div id="content">
+    
+				<article>
+					<img src="images/photo14.jpg"/>
+					<div class="prod-single-content">
+						<h2 id="goodname">金计山猫王榴莲肉</h2>
+						<p id="googddescription">
+							北方一些地区只管萝卜中的白萝卜叫做大萝卜，如河北张家口市人们说大萝卜指的就是白萝卜。
+						</p>
+					</div>
+					<div class="prod-single-content-h">
+						<div class="prod-pricePane">
+							<!-- <span class="last-price">9.95</span> -->
+							<span class="currency">￥</span>
+                            <span class="current-price" id="price">6.95</span>
+						</div>
+					</div>
+					<div class="prod-single-content-h"><hr/></div>
+					<div class="prod-single-content-Stock">
+						
+					</div>
+					<div class="">
+						
+                        
+                        <table width="100%">
+                        	<tr>
+                            	<td withd="70"><span >库存：</span><span id="kucun">99999</span><span id="unit">斤</span></td>
+                        		<td width="80"><label for="Number">购买数量：</label> </td>
+                            	<td width="100"><input  data-rule-required="true"  data-msg-required="请填写数量" data-rule-range="[1,99999]" data-msg-range="请输					 									入1~100" type="number"   pattern="[0-9]*" name="count" value="30" id="Number"  /></td>
+                            </tr>
+                       </table>
+					</div>
+				</article>
+                
+				<div class="toright">
+	              	<!--<a href="#popupDialog" data-role="button" data-theme="b" data-rel="popup" data-position-to="window" data-transition="pop"class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-d toright">加入购物车-->
+					</a>
+                    <button  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-d toright" id="check" height="20px">加入购物车</button>	
+                </div>
+				<div data-role="popup" id="popupDialog" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+    				<div data-role="header" data-theme="a">
+    					<h1>您尚未登录</h1>
+    				</div>
+    				<div role="main" class="ui-content">
+        				<h3 class="ui-title"您尚未登录，请先登录然后再添加购物车。</h3>
+    					<p>您尚未登录，请先登录然后再添加购物车。</p>
+        				<a href="logon.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-d" data-transition="flow" data-ajax="false">是</a>
+        				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-ajax="false">否</a>
+        				<a href="confirmorder.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-d" data-ajax="false">已登录(测试用)</a>
+    				</div>
+                </div><!--popupDialog-->
+               
+                </div><!--content-->
+				
+  <div data-role="footer" class="nav-glyphish-example" data-position="fixed">
+    <div data-role="navbar" class="nav-glyphish-example">
+      <ul>
+        <li><a href="myaccount.html" data-icon="custom" id="order" data-ajax="false">我的账号</a></li>
+        <li><a href="shoplist.html" data-icon="custom" id="shop" data-ajax="false">最近门店</a></li>
+        <li><a href="mycart.html" data-icon="custom" id="char" data-ajax="false">购物车</a></li>
+		<li><a href="myorder.html" data-icon="custom" id="user" data-ajax="false">我的订单</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+ </form> 
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iMarket&trade; v2.0</title>
+		<meta charset="UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css"> 
+    <link rel="stylesheet" href="css/nav.css">
+    <!--For Validation-->
+    <link rel="stylesheet" href="css/screen.css">
+    <link type="text/css" rel="stylesheet" href="css/mycart.css.css">
+    <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <style>
+        /*Good name*/
+       .ui-listview>li p.goodinfo{font-size:14px;font-family:Arial, '微软雅黑', sans-serif; overflow:hidden;width:100px;white-space:nowrap; text-overflow:ellipsis; font-weight:bold;}
+       /*Good description*/
+       .ui-listview>li p.gooddec{font-size:14px;font-family:Arial, '微软雅黑', sans-serif; overflow:hidden;width:200px;white-space:nowrap; text-overflow:ellipsis;}
+    </style>
+	</head>
+<body>
+
+  <div data-role="page" id="myorder">
+    <div data-role="header" data-position="fixed">
+      <a href="index.html" data-role="button" data-icon="home" data-ajax="false">首页</a>
+      <h1>iMarket&trade; v2.0</h1>
+    </div>
+    <div data-role="navbar" data-grid="d">
+      <ul>
+          <li><a href="#" class="ui-btn-active" data-ajax="false">全部</a></li>
+          <li><a href="#" data-ajax="false">待付款</a></li>
+          <li><a href="#" data-ajax="false">待发货</a></li>
+          <li><a href="#" data-ajax="false">待收货</a></li>
+          <li><a href="#" data-ajax="false">待评价</a></li>
+      </ul>
+    </div>
+    <div data-role="content" data-inset="true">
+       <ul data-role="listview" data-inset="true" >
+        <li>
+          <span class="red fontYahei">订单状态：</span>
+          <span class="red toright fontYahei">交易成功</span>
+        </li>
+        <li>
+          <a href="gooddetails.html" data-transition="slide" data-ajax="false">
+          <img src="images/photo14.jpg"></img>
+          <p class="goodinfo">商品名称,商品名称,商品名称,商品名称,商品名称,商品名称,商品名称,商品名称!!!</p>
+          <p class="gooddec">商品描述</p>
+          <div class="ui-li-aside">
+            <span class="red">￥6.95</span>
+            <p class="">X5</p>
+          </div>
+          </a>
+        </li>
+        <li>
+          <div class="toright">
+            <a href="#"  data-position-to="window" data-ajax="false"
+               class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-e">删除订单
+            </a>
+          </div>
+        </li>
+        <li>
+          <span class="red fontYahei">订单状态：</span>
+          <span class="red toright fontYahei">交易成功</span>
+        </li>
+        <li>
+          <a href="gooddetails.html" data-transition="slide" data-ajax="false">
+          <img src="images/photo14.jpg"></img>
+          <h2 class="goodinfo fontYahei">商品名称</h2>
+          <p>商品描述</p>
+          <div class="ui-li-aside">
+            <span class="red">￥6.95</span>
+            <p class="">X5</p>
+          </div>
+          </a>
+        </li>
+        <li>
+          <div class="toright">
+                    <a href="#"  data-position-to="window" data-ajax="false"
+                    class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-e">删除订单
+                    </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div data-role="footer" class="nav-glyphish-example" data-position="fixed">
+      <div data-role="navbar" class="nav-glyphish-example">
+        <ul>
+          <li><a href="myaccount.html" data-icon="custom" id="order" data-ajax="false">我的账号</a></li>
+          <li><a href="shoplist.html" data-icon="custom" id="shop" data-ajax="false">最近门店</a></li>
+          <li><a href="mycart.html" data-icon="custom" id="char" data-ajax="false">购物车</a></li>
+  		    <li><a href="myorder.html" data-icon="custom" id="user" class="ui-btn-active" data-ajax="false">我的订单</a></li>
+        </ul>
+      </div>    
+      
+      </div>
+    </div>
+  </div> 
+ </body>
+</html>

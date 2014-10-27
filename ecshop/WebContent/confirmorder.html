@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>iMarket&trade; v2.0</title>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css"> 
+    <link rel="stylesheet" href="css/nav.css">
+    <!--For Validation-->
+    <link rel="stylesheet" href="css/screen.css">
+    <link type="text/css" rel="stylesheet" href="css/mycart.css.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+  </head>
+<body>
+
+<div data-role="page" id="comfirmorder">
+  <div data-role="header" data-position="fixed">
+    <a href="index.html" data-role="button" data-icon="home" data-ajax="false">首页</a>
+    <h1>iMarket&trade; v2.0</h1>
+  </div>
+
+ <div data-role="content" data-inset="true">
+ 
+ <div class="article-comments">
+             
+                <img src="images/location_blue.png" />
+                <span class="prod-single-content-span"><strong class="fontYahei">收货人：</strong></span><span class="fontYahei">收货人姓名</span> 
+                <p>
+                <span class="prod-single-content-span"><strong class="fontYahei">收货地址：</strong></span><span class="fontYahei">天津市河西区友谊路180号天津市河西区友谊路180号天津市河西区友谊路180号天津市河西区友谊路180号</span> 
+                <p>
+                <br/>
+              
+        </div>
+
+            <div class="c_list cb">
+                        <table>
+                            <!--Generate below from server side-->
+                            <tr class="goodtr">
+                                <td width="15%">
+                                    <img  class="goodimg" src="images/photo11.jpg">
+                                </td>
+                                <td width="65%">
+                                    <p class="goodinfo" name="goodName">新奇士脐橙，8斤，甜中带微!以下是省略的文字</p>
+                                    <p class="gooddec fontYahei" name="goodDescript">新奇士脐橙，8斤，甜中带微!以下是省略的文字</p>
+                                    <p><lable class="fontYahei">价格：</lable><lable class="red" name="price">19.0</lable><lable class="fontYahei">数量：</lable><lable class="red">100</lable></p>
+                                </td>
+                            </tr>
+                            <tr class="goodtr">
+                                <td width="15%">
+                                    <img  class="goodimg" src="images/photo13.jpg">
+                                </td>
+                                <td width="65%">
+                                    <p class="goodinfo" name="goodName">新奇士脐橙，9斤，甜中带微!以下是省略的文字</p>
+                                    <p class="gooddec fontYahei" name="goodDescript">新奇士脐橙，9斤，甜中带微!以下是省略的文字</p>
+                                    <p><lable class="fontYahei">价格：</lable><lable class="red" name="price">19.0</lable><lable clas="fontYahei">数量：</lable><lable class="red">200</lable></p>
+                                </td>
+                            </tr>
+							</table>
+            </div>
+            <div class="ui-field-contain c_list cb">
+                  <label class="fontYahei">联系电话：</label>
+                  <input type="text" name="phonenum" id="phonenum" data-clear-btn="true"  type="number" placeholder="输入手机号..." >
+            </div>
+            <div class="totalCheck" id="totalCheck">
+                <table width="100%" border="0">
+                    <tr>
+    	                <td width="20%"></td>
+                        <td width="20%"></td>
+                        <td width="40%">
+                            <p> <span class="pl15 fontYahei">总计：</span><span class="ff6"><lable class="red" id="totalPrice" min=1>500.0</lable></span></p>
+                        </td>
+                        <td width="20%"><button  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-d toright" id="check" >提交订单</button></td>
+                    </tr>
+                </table>
+            </div> 
+              
+    </div>
+  
+
+  <div data-role="footer" class="nav-glyphish-example" data-position="fixed">
+    <div data-role="navbar" class="nav-glyphish-example">
+      <ul>
+        <li><a href="myaccount.html" data-icon="custom" id="order" data-ajax="false">我的账号</a></li>
+        <li><a href="shoplist.html" data-icon="custom" id="shop" data-ajax="false">最近门店</a></li>
+        <li><a href="mycart.html" data-icon="custom" id="char" data-ajax="false">购物车</a></li>
+		    <li><a href="myorder.html" data-icon="custom" id="user" data-ajax="false">我的订单</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+ 
+
+</body>
+</html>

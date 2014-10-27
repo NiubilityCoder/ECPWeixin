@@ -1,0 +1,51 @@
+.red { font-size: 15px; color: #EA2424; margin: 0px 5px; }
+.total{position: relative; top: 2px; float: right;background-color: #FFFFFF;}
+.toright{position: relative; top: 2px; float: right;}
+.toleft{position: relative; top: 2px; float: left;}
+.centerbtn{margin-right: auto;margin-left: auto;height:100px;width:200px;vertical-align:middle;line-height:200px;}
+
+/*For Good style*/
+.ui-checkbox{width: 30px;height: 30px;}
+.goodinfo{font-size:14px;font-family:Arial, '微软雅黑', sans-serif; overflow:hidden;width:150px;white-space:nowrap; text-overflow:ellipsis; font-weight:bold;font-size:14px;}
+.gooddec{overflow:hidden;width:200px;white-space:nowrap; text-overflow:ellipsis; }
+.goodimg{ width:80px; height: 80px}
+.goodtr { margin:3px 0px; border-top:1px solid #eee; background:#fff; display: inline-block; width:100%; }
+.totalCheck{background:#fff;}
+.goodtr2 {
+	margin: 3px 0px;
+	border-top: 1px solid #eee;
+	background: #fff;
+	width: 100%; 
+}
+
+
+
+/*Globel*/
+body, div { font-family: 'lucida grande', helvetica, verdana, arial, sans-serif }
+ 
+.fontYahei {font-size:14px;font-family:Arial, '微软雅黑', sans-serif; }
+
+/*for jQuery Mobile button style theme-d*/
+html head + body .ui-btn.ui-btn-d,
+html head + body .ui-btn.ui-btn-d:visited {
+	background-color: #f3972b /*{d-bup-background-color}*/;
+	border-color: #855317 /*{d-bup-border}*/;
+	color: #ffffff /*{d-bup-color}*/;
+	text-shadow: 0 /*{d-bup-shadow-x}*/ 1px /*{d-bup-shadow-y}*/ 0 /*{d-bup-shadow-radius}*/ #444444 /*{d-bup-shadow-color}*/;
+}
+html head + body .ui-btn.ui-btn-d:hover {
+	background-color: #FFad31 /*{d-bhover-background-color}*/;
+	border-color: #8c5f1a /*{d-bhover-border}*/;
+	color: #ffffff /*{d-bhover-color}*/;
+	text-shadow: 0 /*{d-bhover-shadow-x}*/ 1px /*{d-bhover-shadow-y}*/ 0 /*{d-bhover-shadow-radius}*/ #444444 /*{d-bhover-shadow-color}*/;
+}
+
+html body  .ui-btn:active,
+html head + body .ui-btn.ui-btn-d:active {
+	background-color: #FFad31 /*{d-bdown-background-color}*/;
+	border-color: #8c5f1a /*{d-bdown-border}*/;
+	color: #000000 /*{d-bdown-color}*/;
+	text-shadow: 0 /*{d-bdown-shadow-x}*/ 1px /*{d-bdown-shadow-y}*/ 0 /*{d-bdown-shadow-radius}*/ #eeeeee /*{d-bdown-shadow-color}*/;
+}
+.checkbox{font-size:10px; color:#ccc; background:url(../images/box.png) 0 0 no-repeat; background-size:100%; -webkit-appearance:none; -moz-appearance:none; border:0; border:none; vertical-align:middle; width:36px; height:36px;}
+.checked{font-size:10px; color:#ccc; background:url(../images/check.png) 0 0 no-repeat; background-size:100%; -webkit-appearance:none; -moz-appearance:none; border:0; border:none; vertical-align:middle; width:36px; height:36px;}
